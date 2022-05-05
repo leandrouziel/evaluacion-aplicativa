@@ -1,0 +1,116 @@
+﻿html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    height: 30rem;
+    background-image: url(../img/header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin: 0;
+}
+
+@media(min-width: 768px) {
+    .header {
+        height: 40rem;
+    }
+}
+
+.navegacion {
+    background-color: blue;
+}
+
+nav {
+    width: min(70%, 120rem);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+nav a {
+    color: white;
+}
+
+.contenedor-ubicacion {
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-ubicacion h1 {
+    color: white;
+    font-size: 2rem;
+}
+
+.contenedor-ubicacion div {
+    color: white;
+    display: flex;
+}
+
+.contenedor-ubicacion div h2 {
+    font-size: 1.8rem;
+}
+
+.main__contenedor {
+    padding-top: 3rem;
+    text-align: center;
+    width: min(70%, 120rem);
+    margin: 0 auto;
+}
+
+.main__contenedor__h3 {
+    color: white;
+}
+
+.main__contenedor__h4 {
+    color: white;
+}
+
+main {
+    background-color: blue;
+}
+
+.conferences-friday, .conferences-saturday {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    gap: 3rem;
+}
+
+@media(min-width: 768px) {
+    .conferences-friday, .conferences-saturday {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        gap: 3rem;
+    }
+}
+
+.conference {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: #DFE9F3;
+    padding: 0 2rem;
+    border-radius: 2rem;
+}
+.conference div {
+    width: 90%;
+    text-align: start;
+}
